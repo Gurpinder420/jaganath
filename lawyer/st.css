@@ -4,6 +4,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+img
+{
+  border-radius: 30px;
+}
 
 :root {
   --primary: #c6a43f;
@@ -276,6 +280,7 @@ p {
 .nav-logo img {
   height: 50px;
   width: auto;
+  border-radius: 30px;
   background-color: #c5c4c2;
 }
 
@@ -502,7 +507,7 @@ p {
 }
 
 .hero-eyebrow span {
-  font-size: 0.9rem;
+  font-size: 1.5rem;
   letter-spacing: 2px;
   color: var(--primary);
   animation: fadeIn 1s ease 0.5s both;
@@ -533,6 +538,7 @@ p {
   animation: fadeInUp 1s ease 0.9s both;
 }
 
+
 .hero-stats {
   position: absolute;
   right: 5%;
@@ -540,7 +546,8 @@ p {
   display: flex;
   gap: 3rem;
   animation: fadeIn 1s ease 1.2s both;
-}
+
+} 
 
 .stat {
   text-align: right;
@@ -549,15 +556,15 @@ p {
 .stat-num {
   font-size: clamp(2rem, 5vw, 3rem);
   font-weight: 600;
-  color: var(--primary);
+  color: rgb(241, 167, 69);
   font-family: 'Cormorant Garamond', serif;
   line-height: 1;
   animation: float 3s ease infinite;
 }
 
 .stat-label {
-  font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.2rem;
+  color: aliceblue;
   letter-spacing: 1px;
 }
 
@@ -766,9 +773,12 @@ p {
 }
 
 .img1, .img2, .img3, .img4, .img5, .img6 {
-  overflow: hidden;
-  margin-bottom: 1.5rem;
+  /* overflow: hidden; */
+  /* margin-bottom: 1.5rem; */
 }
+/* .img5 img {
+  width: 100%;
+} */
 
 
 .card-num {
@@ -1345,6 +1355,17 @@ footer {
 #home{
    background-image: url("./images/respons.webp");
 }
+.stat-num
+{
+   font-weight: 1000;
+    font-size: 3rem;
+   color: rgb(245, 162, 53);
+}
+.stat-label
+{
+  font-size: 0.9rem;
+  font-weight: 700;
+}
   
   .btn-primary,
   .btn-outline {
@@ -1367,6 +1388,7 @@ footer {
   .card-tags {
     justify-content: center;
   }
+ 
   .section-label
   {
  
