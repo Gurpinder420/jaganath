@@ -581,41 +581,35 @@
   @media (max-width: 640px) {
     nav { padding: 16px 20px; }
     nav.scrolled { padding: 12px 20px; }
-    .hero { padding: 0 20px 60px; }
+    .hero { padding: 0 20px 50px; }
     .hero-stats { display: none; }
     .hero-line { left: 20px; }
-    section { padding: 70px 20px; }
+    section { padding: 60px 20px; }
     .practice-grid { grid-template-columns: 1fr; }
     .process-steps { grid-template-columns: 1fr; }
     .form-row { grid-template-columns: 1fr; }
-    footer { padding: 50px 20px; }
-    .footer-inner { grid-template-columns: 1fr; gap: 36px; }
+    footer { padding: 40px 20px; }
+    .footer-inner { grid-template-columns: 1fr; gap: 30px; }
     .footer-bottom { flex-direction: column; gap: 10px; text-align: center; }
   }
  @media (max-width: 480px)
  {
-   .nav-links a
-  {
-    font-weight: bold;
-    border: 2px solid red;
-  }
   #home{
     background-image: url("./images/respons.webp");
     background-size: 100% 90%;
     height: 500px;
   }
    .hero-eyebrow span
-  /* border: 2px solid red; */
- {      font-size: 16px;
+   {
+      font-size: 16px;
       margin-bottom: 30px;
    }  
+   section { padding: 50px 16px; }
    .about-profile-card 
    {
-    /* margin-bottom: 20px; */
     width: 100%;
-    /* margin: 0; */
-    padding: 0px 0px 0px 0px;
-    /* border: 2px solid red; */
+    padding: 32px 24px;
+    margin: 0;
    }
     .about-profile-card img
    {
@@ -624,9 +618,9 @@
   
     .practice-card
     {
-      /* border: 2px solid red; */
-      width: 300px;
-      margin-left: -18px;
+      width: 100%;
+      margin-left: 0;
+      padding: 32px 24px;
     }
      .img1 img
   {
@@ -662,22 +656,19 @@
   }
   .card-desc
   {
-    font-size: 1em;
+    font-size: 0.95rem;
   }
   .why-img img
   {
     width: 100%;
+    height: auto;
   }
-  .contact-form
-  {
-    
-  overflow: hidden;
-  }
-  .form-group
-  {
-   
-    overflow: hidden;
-  }
+  footer { padding: 40px 16px; }
+  .footer-inner { gap: 24px; }
+  .footer-bottom { padding-top: 20px; }
+  .footer-disclaimer { padding-top: 16px; font-size: 0.78rem; }
+  .contact-details { gap: 16px; }
+ 
   .footer-brand p
   {
     font-size: 2rem;
