@@ -31,7 +31,8 @@
   nav {
     position: fixed; top: 0; left: 0; right: 0; z-index: 999;
     display: flex; align-items: center; justify-content: space-between;
-    padding: 20px 60px;
+    /* padding: 20px 60px; */
+ 
     background: transparent;
     transition: background 0.4s, padding 0.4s, backdrop-filter 0.4s;
   }
@@ -41,19 +42,24 @@
     padding: 14px 60px;
     border-bottom: 1px solid rgba(201,168,76,0.12);
   }
-  .nav-logo {
+  /* .nav-logo {
     font-family: 'Cormorant Garamond', serif;
     font-size: 1.4rem; font-weight: 600;
     color: var(--gold);
     letter-spacing: 0.5px;
     text-decoration: none;
     line-height: 1.2;
+  } */
+  .nav-logo img
+  {
+    background-color: #D8D4CC;
+  
   }
   .nav-logo span { display: block; font-size: 0.65rem; font-family: 'Jost', sans-serif; font-weight: 300; letter-spacing: 3px; color: var(--text-muted); text-transform: uppercase; }
   .nav-links { display: flex; gap: 40px; list-style: none; }
   .nav-links a { 
     color: aliceblue;
-     text-decoration: none; font-size: 0.78rem; letter-spacing: 2px; text-transform: uppercase; font-weight: 500; transition: color 0.3s; }
+     text-decoration: none; font-size: 0.78rem; letter-spacing: 2px; text-transform: uppercase; font-weight: 700; transition: color 0.3s; }
   .nav-links a:hover { color: var(--gold); }
   .nav-cta {
     background: transparent; border: 1px solid var(--gold);
@@ -74,12 +80,12 @@
   .mobile-menu {
     display: none; 
      /* border: 2px solid #E8C97A; */
-    height: 500px;
+    height: 450px;
     position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 998;
     background:rgb(159, 143, 115);
     flex-direction: column; align-items: start; justify-content: center;
      gap: 16px;
-     background-image: url("./images/about.jpeg");
+     background-image: url("./images/respo.jpeg");
      background-size: cover;
      
   }
@@ -92,7 +98,7 @@
   
   #home
   {
-     background-image: url("./images/hero1.jpg");
+     background-image: url("./images/hero4.webp");
     background-size: cover;
     /* border: 3px solid red; */
     
@@ -148,10 +154,10 @@
     opacity: 0; transform: translateY(30px);
     animation: fadeUp 0.9s 0.5s ease forwards;
   }
-  .hero h1 em { color: var(--gold); font-style: italic; }
+  .hero h1 em { color: aliceblue; font-style: italic; }
 
   .hero-desc {
-    font-size: 1.2rem; font-weight: 300;
+    font-size: 1.2rem; font-weight: 500;
      /* color: var(--text-muted); */
     line-height: 1.8; max-width: 520px; margin-bottom: 48px;
     opacity: 0; transform: translateY(20px);
@@ -187,7 +193,7 @@
   }
   .stat { text-align: right; }
   .stat-num { font-family: 'Cormorant Garamond', serif; font-size: 2.8rem; font-weight: 300; color: var(--gold); line-height: 1; }
-  .stat-label { font-size: 0.65rem; letter-spacing: 3px; text-transform: uppercase; color: antiquewhite; margin-top: 4px; }
+  .stat-label { font-size: 0.65rem;font-weight: 500; letter-spacing: 3px; text-transform: uppercase; color: antiquewhite; margin-top: 4px; }
 
   /* ── SECTIONS ── */
   section { padding: 100px 60px; }
@@ -409,6 +415,12 @@
       line-height: 1.7; font-weight: 300; }
 
   /* ── WHY US ── */
+  .why-img img
+  {
+    height: 280px;
+    width: 350px;
+    border-radius: 5px;
+  }
   .why { background: var(--dark); }
   .why-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
   .why-left { }
@@ -582,23 +594,27 @@
   }
  @media (max-width: 480px)
  {
+   .nav-links a
+  {
+    font-weight: bold;
+    border: 2px solid red;
+  }
   #home{
-    background-image: url("./images/respo.jpeg");
+    background-image: url("./images/respons.webp");
     background-size: 100% 90%;
     height: 500px;
   }
    .hero-eyebrow span
-   {
-      /* border: 2px solid red; */
-      font-size: 16px;
+  /* border: 2px solid red; */
+ {      font-size: 16px;
       margin-bottom: 30px;
    }  
    .about-profile-card 
    {
     /* margin-bottom: 20px; */
     width: 100%;
-    margin-left: -30px;
-    /* padding: 0px 0px 0px 0px; */
+    /* margin: 0; */
+    padding: 0px 0px 0px 0px;
     /* border: 2px solid red; */
    }
     .about-profile-card img
