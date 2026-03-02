@@ -551,6 +551,8 @@ p {
 
 .stat {
   text-align: right;
+ 
+   margin-left: 15px;
 }
 
 .stat-num {
@@ -560,6 +562,9 @@ p {
   font-family: 'Cormorant Garamond', serif;
   line-height: 1;
   animation: float 3s ease infinite;
+  
+
+ 
 }
 
 .stat-label {
@@ -776,9 +781,7 @@ p {
   /* overflow: hidden; */
   /* margin-bottom: 1.5rem; */
 }
-/* .img5 img {
-  width: 100%;
-} */
+
 
 
 .card-num {
@@ -1247,6 +1250,29 @@ footer {
   .nav-cta {
     display: none;
   }
+   .img1 img  {
+   height: auto;
+  }
+   .img2 img  {
+   height: auto;
+  }
+   .img3 img  {
+   height: auto;
+  }
+   .img4 img  {
+   height: auto;
+  }
+   .img5 img  {
+   height: auto;
+  }
+   .img6 img  {
+   height: auto;
+  }
+  .section-label
+  {
+    display: flex;
+    flex-direction: column;
+  }
   
   .hamburger {
     display: flex;
@@ -1285,12 +1311,15 @@ footer {
     margin-left: auto;
     margin-right: auto;
   }
+ 
 }
 
 @media (max-width: 768px) {
   #navbar {
     padding: 1rem 5%;
   }
+  
+ 
   
   .nav-logo {
     font-size: 1.2rem;
@@ -1353,7 +1382,14 @@ footer {
     flex-direction: column;
   }
 #home{
-   background-image: url("./images/respons.webp");
+   background-image: url("./images/responsive1.jpg");
+}
+.hero-stats
+{
+ 
+  background: rgb(169, 108, 65);
+  /* opacity: 0.8; */
+  background: transparent;
 }
 .stat-num
 {
